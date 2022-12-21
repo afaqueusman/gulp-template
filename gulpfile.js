@@ -24,7 +24,7 @@ const removeAttributes = require('posthtml-remove-attributes');
 const { quotes, sectionSigns, shortWords } = require('richtypo-rules-ru');
 
 /**
- * Основные переменные
+ * Key variables
  */
 const paths = {
   dist: './dist',
@@ -50,7 +50,7 @@ const dist = {
 };
 
 /**
- * Получение аргументов командной строки
+ * Getting command line arguments
  * @type {{}}
  */
 const arg = ((argList) => {
@@ -78,7 +78,7 @@ const arg = ((argList) => {
 })(process.argv);
 
 /**
- * Очистка папки dist перед сборкой
+ * Cleaning up the dist folder before building
  * @returns {Promise<string[]> | *}
  */
 function clean() {
@@ -86,7 +86,7 @@ function clean() {
 }
 
 /**
- * Инициализация веб-сервера browserSync
+ * Initializing the browsersync web server
  * @param done
  */
 function browserSyncInit(done) {
@@ -111,7 +111,7 @@ function browserSyncReload(done) {
 }
 
 /**
- * Копирование шрифтов
+ * copy fonts
  * @returns {*}
  */
 function copyFonts() {
@@ -119,7 +119,7 @@ function copyFonts() {
 }
 
 /**
- * Шаблонизация и склейка HTML
+ * HTML templating and gluing
  * @returns {*}
  */
 function htmlProcess() {
@@ -143,7 +143,7 @@ function htmlProcess() {
 }
 
 /**
- * Добавление хеша скриптов и стилей в html для бустинга кеша
+ * Adding script hash and styles to html for cache boosting
  * @returns {*}
  */
 function hashProcess() {
@@ -167,7 +167,7 @@ function hashProcess() {
 }
 
 /**
- * Копирование картинок в dist или оптимизация при финишной сборке
+ * copying pictures to dist or optimization during final assembly
  * @returns {*}
  */
 function imgProcess() {
@@ -178,7 +178,7 @@ function imgProcess() {
 }
 
 /**
- * Склейка и обработка css файлов
+ * Gluing and processing css files
  * @returns {*}
  */
 function cssProcess() {

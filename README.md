@@ -1,14 +1,14 @@
-# Сборка для верстки
+# Assembly for layout
 ![alt text](https://badgen.net/github/release/webzlodimir/gulp-template "Releases")
 
-## Подготовка к работе
+## Preparation for work
 
 1. `git clone git@github.com:webzlodimir/gulp-template.git`
 2. `cd gulp-template`
 3. `yarn install`
 4. `yarn start`
 
-## Структура проекта
+## Project Structure
 
 ```
 gulp-template
@@ -32,8 +32,8 @@ gulp-template
 └── .gitignore
 ```
 
-* Корень проекта:
-    * ```.babelrc``` — настройки Babel
+* Project Root:
+    * ```.babelrc``` — settings Babel
     * ```.prettierrc``` — настройки Prettier
     * ```.prettierignore``` — запрет изменения файлов Prettier
     * ```.gitignore``` – запрет на отслеживание файлов Git'ом

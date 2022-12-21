@@ -196,8 +196,8 @@ function cssProcess() {
 }
 
 /**
- * Склейка и обработка scss файлов без минификации
- * Минификации нет, так как дальше эта верстка отдаётся бэкендеру для натяжки на CMS
+ * Merging and processing scss files without minification
+ * There is no minification, since further this layout is given to the backender for stretching on the CMS
  * @returns {*}
  */
 function scssProcess() {
@@ -221,7 +221,7 @@ function scssProcess() {
 }
 
 /**
- * Склейка JS библиотек с минификацией и babel
+ * Gluing JS libraries with minification and babel
  * @returns {*}
  */
 function libsJsProcess() {
@@ -234,7 +234,7 @@ function libsJsProcess() {
 }
 
 /**
- * Работа с пользовательским js
+ * Working with custom js
  * @returns {*}
  */
 function jsProcess() {
@@ -254,7 +254,7 @@ function jsProcess() {
 }
 
 /**
- * Склейка SVG спрайта
+ * Gluing an SVG sprite
  * @returns {*}
  */
 function SVGProcess() {
@@ -273,7 +273,7 @@ function SVGProcess() {
 }
 
 /**
- * Копирование файлов из папки public в корень сайта при сборке
+ * Copying files from the public folder to the site root during build
  * @returns {*}
  */
 function publicProcess() {
@@ -283,7 +283,7 @@ function publicProcess() {
 }
 
 /**
- * Наблюдение за изменениями в файлах
+ * Watch for changes in files
  */
 function watchFiles() {
   gulp.watch(src.html, gulp.series(htmlProcess, browserSyncReload));
